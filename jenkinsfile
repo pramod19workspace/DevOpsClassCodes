@@ -1,8 +1,7 @@
-##test
 pipeline {
     agent any
     tools {
-        jdk 'myjdk'
+        jdk 'myjava'
         maven 'mymaven'
     }
 
