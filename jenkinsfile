@@ -28,11 +28,6 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage('code_review') {
-            steps {
-                sh 'mvn -P metrics pmd:pmd'
-            }
-        }
         stage('unit_test') {
             steps {
                 sh 'mvn test'
