@@ -12,7 +12,7 @@ pipeline {
                  $class: 'GitSCM',
                  branches: [[name: 'master']],
                  userRemoteConfigs: [[
-                    url: 'https://github.com/devopseng129/DevOpsClassCodes.git',
+                    url: 'https://github.com/pramod19workspace/DevOpsClassCodes.git',
                     credentialsId: '',
                  ]]
                 ])
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('clone') {
             steps {
-                git url: 'https://github.com/devopseng129/DevOpsClassCodes.git'
+                git url: 'https://github.com/pramod19workspace/DevOpsClassCodes.git'
             }
         }
         stage('compile') {
